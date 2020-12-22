@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@model IEnumerable<Medic>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Medics</h2>
+
+<div class="card">
+    <div class="card-header">
+        <h3>All the medics in the database</h3>
+    </div>
+    <div class="card-body">
+        <p>
+            <a class="btn btn-primary"
+               asp-action="Create" asp-controller="Medic">
+                Add New Medic
+            </a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Medic Name</th>
+                    <th scope="col">Specialization</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var medic in Model)
+                {
+                    <tr>
+                        <td>@medic.NumeMedic @medic.PrenumeMedic</td>
+                        <td>@medic.Specializare</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = medic.MedicId })
+                            @Html.ActionLink("Details", "Details", new { id = medic.MedicId })
+                            @if (User.IsInRole("Admin"))
+                            {
+                                @Html.ActionLink("Delete", "Delete", new { id = medic.MedicId })
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
