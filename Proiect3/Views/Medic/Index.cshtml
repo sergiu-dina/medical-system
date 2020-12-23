@@ -34,11 +34,11 @@
                         <td>@medic.NumeMedic @medic.PrenumeMedic</td>
                         <td>@medic.Specializare</td>
                         <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = medic.MedicId })
-                            @Html.ActionLink("Details", "Details", new { id = medic.MedicId })
+                            @Html.ActionLink("Edit", "Edit", new { id = medic.Id })
+                            @Html.ActionLink("Details", "Details", new { id = medic.Id })
                             @if (User.IsInRole("Admin"))
                             {
-                                @Html.ActionLink("Delete", "Delete", new { id = medic.MedicId })
+                                @Html.ActionLink("Delete", "Delete", new { id = medic.Id })
                             }
                         </td>
                     </tr>

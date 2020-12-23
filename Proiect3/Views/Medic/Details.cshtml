@@ -51,7 +51,7 @@
                             <td>@item.Adresa</td>
                             <td>@item.Asigurare</td>
                             <td>
-                                @Html.ActionLink("Details", "Details", "Pacient", new { id = item.PacientId })
+                                @Html.ActionLink("Details", "Details", "Pacient", new { id = item.Id })
                             </td>
                         </tr>
                     }
@@ -62,7 +62,7 @@
     <div class="card-footer">
         <p>
             <a class="btn btn-primary"
-               asp-action="Edit" asp-controller="Medic" asp-route-id="@Model.Medic.MedicId">
+               asp-action="Edit" asp-controller="Medic" asp-route-id="@Model.Medic.Id">
                 Edit
             </a>
             <a class="btn btn-primary"

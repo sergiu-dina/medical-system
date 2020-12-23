@@ -32,11 +32,11 @@
                     <tr>
                         <td>@medicine.Denumire</td>
                         <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = medicine.MedicamentId })
-                            @Html.ActionLink("Details", "Details", new { id = medicine.MedicamentId })
+                            @Html.ActionLink("Edit", "Edit", new { id = medicine.Id })
+                            @Html.ActionLink("Details", "Details", new { id = medicine.Id })
                             @if (User.IsInRole("Admin"))
                             {
-                                @Html.ActionLink("Delete", "Delete", new { id = medicine.MedicamentId })
+                                @Html.ActionLink("Delete", "Delete", new { id = medicine.Id })
                             }
                         </td>
                     </tr>

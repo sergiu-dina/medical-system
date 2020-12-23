@@ -8,7 +8,7 @@ namespace Proiect3.Models
 {
     public class Pacient
     {
-        public int PacientId { get; set; }
+        public int Id { get; set; }
         public string CNP { get; set; }
 
         [Display(Name = "Last Name")]

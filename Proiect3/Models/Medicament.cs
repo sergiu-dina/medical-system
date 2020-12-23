@@ -8,7 +8,7 @@ namespace Proiect3.Models
 {
     public class Medicament
     {
-        public int MedicamentId { get; set; }
+        public int Id { get; set; }
 
         [Display(Name = "Name")]
         public string Denumire { get; set; }

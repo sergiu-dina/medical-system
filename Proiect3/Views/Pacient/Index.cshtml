@@ -36,11 +36,11 @@
                         <td>@pacient.Adresa</td>
                         <td>@pacient.Asigurare</td>
                         <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = pacient.PacientId })
-                            @Html.ActionLink("Details", "Details", new { id = pacient.PacientId })
+                            @Html.ActionLink("Edit", "Edit", new { id = pacient.Id })
+                            @Html.ActionLink("Details", "Details", new { id = pacient.Id })
                             @if (User.IsInRole("Admin"))
                             {
-                                @Html.ActionLink("Delete", "Delete", new { id = pacient.PacientId })
+                                @Html.ActionLink("Delete", "Delete", new { id = pacient.Id })
                             }
                         </td>
                     </tr>

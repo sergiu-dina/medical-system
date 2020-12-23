@@ -31,7 +31,7 @@ namespace Proiect3.Models.Services
 
         public Medicament Get(int id)
         {
-            var medicament = db.Medicamente.FirstOrDefault(m => m.MedicamentId == id);
+            var medicament = db.Medicamente.FirstOrDefault(m => m.Id == id);
             return medicament;
         }
 
@@ -44,7 +44,7 @@ namespace Proiect3.Models.Services
         {
             var entry = db.Entry(medicament);
             entry.State = EntityState.Modified;
-            db.Entry(medicament).Property(u => u.MedicamentId).IsModified = false;
+            db.Entry(medicament).Property(u => u.Id).IsModified = false;
             db.SaveChanges();
         }
     }

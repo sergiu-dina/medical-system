@@ -40,7 +40,7 @@ namespace Proiect3.Controllers
             if (ModelState.IsValid)
             {
                 medicamentData.Add(medicament);
-                return RedirectToAction("Details", new { id = medicament.MedicamentId });
+                return RedirectToAction("Details", new { id = medicament.Id });
             }
             return View();
         }
@@ -63,7 +63,7 @@ namespace Proiect3.Controllers
             if (ModelState.IsValid)
             {
                 medicamentData.Update(medicament);
-                return RedirectToAction("Details", new { id = medicament.MedicamentId });
+                return RedirectToAction("Details", new { id = medicament.Id });
             }
             return View(medicament);
         }
@@ -86,7 +86,7 @@ namespace Proiect3.Controllers
         [HttpPost]
         public IActionResult Delete(Medicament medicament)
         {
-            medicamentData.Delete(medicament.MedicamentId);
+            medicamentData.Delete(medicament.Id);
             return RedirectToAction("Index");
         }
 
@@ -100,7 +100,7 @@ namespace Proiect3.Controllers
             {
                 if(pair.MedicamentId==id)
                 {
-                    var pacient = pacientData.Get(pair.PacientId);
+                    var pacient = pacientData.Get(pair.Pacient.Id);
                     pacients.Add(pacient);
                 }
             }
