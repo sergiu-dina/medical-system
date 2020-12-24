@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Facultate\\An4\\Proiect 3\\Proiect3\\Proiect3\\Proiect3.csproj": {}
+    "E:\\Facultate\\An4\\Proiect 3\\medical-system\\Proiect3\\Proiect3.csproj": {}
   },
   "projects": {
-    "E:\\Facultate\\An4\\Proiect 3\\Proiect3\\Proiect3\\Proiect3.csproj": {
+    "E:\\Facultate\\An4\\Proiect 3\\medical-system\\Proiect3\\Proiect3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Facultate\\An4\\Proiect 3\\Proiect3\\Proiect3\\Proiect3.csproj",
+        "projectUniqueName": "E:\\Facultate\\An4\\Proiect 3\\medical-system\\Proiect3\\Proiect3.csproj",
         "projectName": "Proiect3",
-        "projectPath": "E:\\Facultate\\An4\\Proiect 3\\Proiect3\\Proiect3\\Proiect3.csproj",
+        "projectPath": "E:\\Facultate\\An4\\Proiect 3\\medical-system\\Proiect3\\Proiect3.csproj",
         "packagesPath": "C:\\Users\\Gigabyte\\.nuget\\packages\\",
-        "outputPath": "E:\\Facultate\\An4\\Proiect 3\\Proiect3\\Proiect3\\obj\\",
+        "outputPath": "E:\\Facultate\\An4\\Proiect 3\\medical-system\\Proiect3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gigabyte\\AppData\\Roaming\\NuGet\\NuGet.Config",

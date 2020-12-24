@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Proiect3.Migrations
 {
-    public partial class initial : Migration
+    public partial class InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -52,20 +52,20 @@ namespace Proiect3.Migrations
                 name: "Medicamente",
                 columns: table => new
                 {
-                    MedicamentId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Denumire = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Medicamente", x => x.MedicamentId);
+                    table.PrimaryKey("PK_Medicamente", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Medics",
                 columns: table => new
                 {
-                    MedicId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NumeMedic = table.Column<string>(nullable: true),
                     PrenumeMedic = table.Column<string>(nullable: true),
@@ -73,14 +73,14 @@ namespace Proiect3.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Medics", x => x.MedicId);
+                    table.PrimaryKey("PK_Medics", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Pacients",
                 columns: table => new
                 {
-                    PacientId = table.Column<int>(nullable: false)
+                    Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CNP = table.Column<string>(nullable: true),
                     NumePacient = table.Column<string>(nullable: true),
@@ -90,7 +90,7 @@ namespace Proiect3.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Pacients", x => x.PacientId);
+                    table.PrimaryKey("PK_Pacients", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -216,13 +216,13 @@ namespace Proiect3.Migrations
                         name: "FK_Consultatii_Medicamente_MedicamentId",
                         column: x => x.MedicamentId,
                         principalTable: "Medicamente",
-                        principalColumn: "MedicamentId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Consultatii_Pacients_PacientId",
                         column: x => x.PacientId,
                         principalTable: "Pacients",
-                        principalColumn: "PacientId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -240,13 +240,13 @@ namespace Proiect3.Migrations
                         name: "FK_MedicPacients_Medics_MedicId",
                         column: x => x.MedicId,
                         principalTable: "Medics",
-                        principalColumn: "MedicId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_MedicPacients_Pacients_PacientId",
                         column: x => x.PacientId,
                         principalTable: "Pacients",
-                        principalColumn: "PacientId",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 

@@ -100,7 +100,7 @@ namespace Proiect3.Controllers
             {
                 if(pair.MedicamentId==id)
                 {
-                    var pacient = pacientData.Get(pair.Pacient.Id);
+                    var pacient = pacientData.Get(pair.PacientId);
                     pacients.Add(pacient);
                 }
             }

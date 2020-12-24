@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ssw0+XgGMBsV/imp72/WRf8cpsFoi645sF0vM6wCmuYB3pj2oBJ4H7/FcO8wrtzHc6NEvQ97dppXnr89eV5Qgg==",
+  "dgSpecHash": "UYVXJ3GqLm1oVpd32x3e5QNrpUzKRGVqUkxyfx4pGtduKTTde0Dzi1hEkc14q/tyrq5BYZhZ9RbZZ+OFEdJ25w==",
   "success": true,
-  "projectFilePath": "E:\\Facultate\\An4\\Proiect 3\\Proiect3\\Proiect3\\Proiect3.csproj",
+  "projectFilePath": "E:\\Facultate\\An4\\Proiect 3\\medical-system\\Proiect3\\Proiect3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gigabyte\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.10\\microsoft.aspnetcore.cryptography.internal.3.1.10.nupkg.sha512",
     "C:\\Users\\Gigabyte\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.10\\microsoft.aspnetcore.cryptography.keyderivation.3.1.10.nupkg.sha512",

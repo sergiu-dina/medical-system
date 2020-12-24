@@ -10,8 +10,8 @@ using Proiect3.Data;
 namespace Proiect3.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20201223143523_IdUpdate2")]
-    partial class IdUpdate2
+    [Migration("20201224141831_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -300,7 +300,7 @@ namespace Proiect3.Migrations
 
             modelBuilder.Entity("Proiect3.Models.Pacient", b =>
                 {
-                    b.Property<int>("PacientId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -320,7 +320,7 @@ namespace Proiect3.Migrations
                     b.Property<string>("PrenumePacient")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("PacientId");
+                    b.HasKey("Id");
 
                     b.ToTable("Pacients");
                 });
